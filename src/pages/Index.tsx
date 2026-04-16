@@ -208,10 +208,14 @@ export default function Index() {
               opacity: 0,
             }}
           >
-            Невеста
+            Лисья
             <br />
-            <em style={{ color: "#C9943A" }}>Лиса</em>
+            <em style={{ color: "#C9943A" }}>Невеста</em>
           </h1>
+
+          <p className="font-cormorant text-lg animate-fade-up" style={{ color: "#C9943A", animationDelay: "0.4s", opacity: 0, letterSpacing: "0.15em" }}>
+            Софи Клэр
+          </p>
 
           <FoxDivider />
 
@@ -267,7 +271,7 @@ export default function Index() {
               />
               <img
                 src={BOOK_IMG}
-                alt="Обложка книги Невеста Лиса"
+                alt="Обложка книги Лисья Невеста"
                 className="w-full max-w-sm mx-auto relative z-10 transition-transform duration-700 group-hover:scale-[1.02]"
                 style={{
                   boxShadow: "0 20px 60px rgba(0,0,0,0.8), 0 0 40px rgba(201,148,58,0.15)",
@@ -289,9 +293,9 @@ export default function Index() {
 
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { label: "Жанр", value: "Тёмное романтическое фэнтези" },
-                  { label: "Сеттинг", value: "Древняя Япония, мир духов" },
-                  { label: "Объём", value: "Роман" },
+                  { label: "Жанр", value: "Романтическое фэнтези" },
+                  { label: "Автор", value: "Софи Клэр" },
+                  { label: "Объём", value: "190 страниц" },
                   { label: "Язык", value: "Русский" },
                 ].map((item) => (
                   <div key={item.label} className="p-4" style={{ background: "rgba(26,15,24,0.8)", border: "1px solid rgba(201,148,58,0.15)" }}>
@@ -352,17 +356,17 @@ export default function Index() {
                 className="font-cormorant text-2xl font-light mb-2"
                 style={{ color: "#C9943A" }}
               >
-                Имя Автора
+                Софи Клэр
               </p>
               <p className="font-golos text-sm tracking-widest uppercase mb-6" style={{ color: "#C8BFB5" }}>
-                Писатель · Мечтатель · Исследователь мифов
+                Автор · Романтическое фэнтези
               </p>
 
               <FoxDivider />
 
               <p className="font-golos leading-relaxed mt-6" style={{ color: "#C8BFB5" }}>
                 Здесь будет ваша биография. Расскажите читателям о себе — 
-                откуда появилось увлечение восточной мифологией, как родилась идея книги, 
+                откуда появилось увлечение восточной мифологией, как родилась идея «Лисьей Невесты», 
                 что вдохновляет вас на создание мистических историй о лисах-оборотнях 
                 и тёмных духах древней Японии.
               </p>
@@ -502,7 +506,7 @@ export default function Index() {
           狐の花嫁
         </p>
         <p className="font-golos text-xs tracking-widest uppercase" style={{ color: "#C8BFB5", opacity: 0.5 }}>
-          © 2026 · Невеста Лиса · Все права защищены
+          © 2026 · Лисья Невеста · Софи Клэр · Все права защищены
         </p>
       </footer>
     </div>
